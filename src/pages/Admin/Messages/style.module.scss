@@ -1,0 +1,58 @@
+.message{
+  background-color: #FFF;
+  border-radius: 20px ;
+  .message-head{
+    padding: 20px;
+  }
+  .message-body{
+    padding: 25px;
+    @media(min-width:992px){
+      padding: 25px 70px;
+    }
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    .message-item{
+      margin-bottom: 30px;
+      .message-content{
+        background-color: #E6E7E8;
+        padding: 10px 20px;
+        border-radius: 3px;
+        display: inline-flex;
+      }
+      max-width: 70%;
+      &.message-received{
+        .message-content{
+          background-color: rgba(100, 84, 156 , .6);
+        }
+      }
+      &:not(.message-received){
+        margin-inline-start: auto;
+        :global{
+          .d-flex{
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+.message-footer{
+  background-color: rgba(100, 84, 156 , .6);
+  padding-top: 20px;
+  border-radius: 0 0 20px 20px;
+  :global{
+    .ant-input{
+      background-color: rgba(255, 255, 255 , .4);
+      border: 0;
+      padding: 13px 11px;
+    }
+  }
+  .ant-btn.ant-btn-lg {
+    height: 40px;
+  }
+}
+

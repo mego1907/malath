@@ -1,0 +1,44 @@
+.icon-advisers,.icon-beneficary{
+  border-radius: 10px;
+  padding: 13px 5px;
+  text-align: center;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-advisers{
+  background-color: rgba(72, 220, 27, 0.25);
+  border-radius: 10px;
+  padding: 13px 5px;
+  text-align: center;
+  font-size: 32px;
+  color: rgb(72, 220, 27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-beneficary{
+  background-color: rgba(238, 9, 192 , .25);
+  border-radius: 10px;
+  padding: 13px 5px;
+  text-align: center;
+  font-size: 32px;
+  color: #EE09C0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-title{
+  flex:  0 0 auto;
+}
+
+.progress{
+  :global{
+    .ant-progress{
+      margin: 0 0 0 10px;
+      direction: ltr;
+    }
+  }
+}

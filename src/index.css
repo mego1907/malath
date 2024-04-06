@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto:wght@400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .home-container {
+    @apply container mx-auto lg:px-16 xl:px-20 md:px-8
+  }
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.font-kalam-light {
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}

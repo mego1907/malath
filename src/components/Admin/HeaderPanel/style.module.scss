@@ -1,0 +1,23 @@
+.header-panel{
+  padding: 20px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-tolpar{
+  display: flex;
+  align-items: center;
+  a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(143, 143, 143 , .18);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #D2D3D5;
+    
+  }
+}
+
