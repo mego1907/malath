@@ -2,10 +2,10 @@ import React from 'react'
 
 const WhoWeAre = ({ data }) => {
   return (
-    <div className='px-8 py-8 bg-gradient-to-b from-primary-920 to-white'>
+    <div className='px-8 py-8 bg-gradient-to-b from-primary-920 to-white' id="about-us">
       <div className="home-container flex md:flex-row flex-col items-center gap-20">
         <div className='md:w-1/2'>
-          <h2 className='lg:text-[80px] font-bold text-lg text-white md:max-w-[7ch] rtl:mb-12'>{data?.title}</h2>
+          <h2 className='lg:text-[80px] font-bold text-lg text-white md:max-w-[7ch] mb-12'>{data?.title}</h2>
           <p className='text-white md:text-2xl text-base md:max-w-[40ch]'>{data?.subtitle}</p>
         </div>
 

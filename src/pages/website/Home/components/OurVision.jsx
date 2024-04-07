@@ -6,7 +6,7 @@ const OurVision = ({ data }) => {
       <div className="home-container">
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div className='flex flex-col justify-center'>
-            <h3 className='md:text-[5rem] text-lg font-bold text-white rtl:mb-12'>{data?.title}</h3>
+            <h3 className='md:text-[5rem] text-lg font-bold text-white mb-12'>{data?.title}</h3>
             <p className="md:text-2xl md:leading-10 text-base text-white md:w-9/12">{data?.subtitle}</p>
           </div>
           <div>

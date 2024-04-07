@@ -29,7 +29,7 @@ const OurGoals = ({ data, title }) => {
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:pt-0 pt-8">
-        <div className='md:pl-28'>
+        <div className='ltr:md:pl-28 rtl:md:pr-28'>
           <h3 className='text-primary-500 md:text-[80px] text-xl font-bold md:mb-12 md:text-left text-center ltr:text-left rtl:text-right'>{title}</h3>
 
           <div className="grid md:grid-cols-2 grid-cols-1 gap-10">

@@ -55,11 +55,7 @@ const Login = () => {
 
 
   useEffect(() => {
-    dispatch(getSections({
-      params: {
-                  language: currentLang,
-                },
-    }));
+    dispatch(getSections({ params: { language: currentLang } }));
   }, [dispatch, currentLang])
 
 
@@ -67,7 +63,7 @@ const Login = () => {
 
 
   return (
-    <div className="bg-white w-full fixed h-[111px] top-0 flex items-center left-0 z-50">
+    <div className="bg-white w-full fixed h-[111px] top-0 flex items-center left-0 z-50 ">
       <div className="home-container relative">
 
         <Dropdown
@@ -103,18 +99,20 @@ const Login = () => {
         
         <div className="flex px-4 md:px-0 md:justify-center justify-between items-center md:gap-16 gap-4">
           <div className="md:flex hidden md:gap-16 gap-4">
-            <span className="lg:text-2xl text-xl font-bold">Our Consultants</span>
-            <span className="lg:text-2xl text-xl font-bold">About Us</span>
+            <a href="#our-consultants" className="lg:text-2xl text-xl font-bold">Our Consultants</a>
+            <a href="#about-us" className="lg:text-2xl text-xl font-bold">About Us</a>
           </div>
 
           <div className="relative flex items-center justify-center z-50">
-            <img src={dataSections?.logo} alt="" className="w-[63px] " />
+            <Link to="/">
+              <img src={dataSections?.logo} alt="" className="w-[63px] " />
+            </Link>
             {/* <NavLogo /> */}
           </div>
 
           <div className="md:flex hidden md:gap-16 gap-4">
-            <span className="lg:text-2xl text-xl font-bold">Join US</span>
-            <span className="lg:text-2xl text-xl font-bold">Blog</span>
+            <a href="#join-us" className="lg:text-2xl text-xl font-bold">Join US</a>
+            <Link to="/blog" className="lg:text-2xl text-xl font-bold">Blog</Link>
           </div>
 
           <button 

@@ -19,7 +19,7 @@ const JoinMalathApp = ({ data, title, subtitle }) => {
   ]
 
   return (
-    <div>
+    <div id="join-us">
       <img src="/images/jsoinMalathShape.png" alt="" className='w-[700px] absolute z-20' />
       <div className="home-container grid md:grid-cols-2 grid-cols-1 justify-center items-center">
         <div className='py-20 pt-28 relative'>

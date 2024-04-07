@@ -15,7 +15,7 @@ const OurConsultants = ({ data, title, subtitle, advisers }) => {
   const slideOfConsultants = chunks(advisers, 4)
 
   return (
-    <div className='md:py-12 py-8 px-2 md:px-8 bg-our-consultants-image relative bg-cover bg-center'>
+    <div className='md:py-12 py-8 px-2 md:px-8 bg-our-consultants-image relative bg-cover bg-center' id="our-consultants">
       <div className='absolute left-0 top-0 w-full h-full bg-primary-920 z-10'></div>
       {/* Header */}
       <div className='text-center relative z-30'>
