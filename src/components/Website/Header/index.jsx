@@ -64,10 +64,10 @@ const Login = () => {
 
   return (
     <div className="bg-white w-full fixed h-[111px] top-0 flex items-center left-0 z-50 ">
-      <div className="home-container relative">
+      <div className="relative home-container">
 
         <Dropdown
-          className="md:translate-x-0 -translate-x-10 z-50"
+          className="z-50 -translate-x-10 md:translate-x-0"
           menu={{
             items: [
               {
@@ -90,34 +90,34 @@ const Login = () => {
           }}
           arrow
         >
-          <button type="button" className="absolute right-4 translate-y-1/2 flex items-center justify-center gap-2 border rounded-full p-2 border-dark-8">
+          <button type="button" className="absolute flex items-center justify-center gap-2 p-2 translate-y-1/2 border rounded-full right-4 border-dark-8">
             <LanguageIcon />
             <IoIosArrowDown />
           </button>
         </Dropdown>
         
         
-        <div className="flex px-4 md:px-0 md:justify-center justify-between items-center md:gap-16 gap-4">
-          <div className="md:flex hidden md:gap-16 gap-4">
-            <a href="#our-consultants" className="lg:text-2xl text-xl font-bold">Our Consultants</a>
-            <a href="#about-us" className="lg:text-2xl text-xl font-bold">About Us</a>
+        <div className="flex items-center justify-between gap-4 px-4 md:px-0 md:justify-center md:gap-16">
+          <div className="hidden gap-4 md:flex md:gap-16">
+            <a href="#our-consultants" className="text-xl font-bold lg:text-2xl">Our Consultants</a>
+            <a href="#about-us" className="text-xl font-bold lg:text-2xl">About Us</a>
           </div>
 
-          <div className="relative flex items-center justify-center z-50">
+          <div className="relative z-50 flex items-center justify-center">
             <Link to="/">
               <img src={dataSections?.logo} alt="" className="w-[63px] " />
             </Link>
             {/* <NavLogo /> */}
           </div>
 
-          <div className="md:flex hidden md:gap-16 gap-4">
-            <a href="#join-us" className="lg:text-2xl text-xl font-bold">Join US</a>
-            <Link to="/blog" className="lg:text-2xl text-xl font-bold">Blog</Link>
+          <div className="hidden gap-4 md:flex md:gap-16">
+            <a href="#join-us" className="text-xl font-bold lg:text-2xl">Join US</a>
+            <a href="https://malathapp.com/blog" className="text-xl font-bold lg:text-2xl">Blog</a>
           </div>
 
           <button 
             type="button" 
-            className="flex flex-col gap-2 absolute right-2 z-50 md:hidden" 
+            className="absolute z-50 flex flex-col gap-2 right-2 md:hidden" 
             onClick={() => setOpenSidebarLinks(!openSidebarLinks)}
           >
             <span className="w-8 h-0.5 bg-black"></span>
